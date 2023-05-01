@@ -1,0 +1,29 @@
+<table class="table  custom-default-box-bg-color mb-4 ">
+      <thead>
+        <tr>
+          <th scope="col">SL.No</th>
+         
+          <th scope="col">Product</th>
+          <th scope="col">Description</th>
+          <th scope="col">Product Price</th>
+          <th scope="col">Product Added On</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>';
+     <tr class="hover-table">
+        <th scope="row">'.$no++ . '</th>
+       
+        <td>'.$row['product_name'].'</td>
+        <td>'.$row['product_desc'].'</td>
+        <td>'.$row['product_price'].'</td>
+        <td>'.$row['product_added_datetime'].'</td>
+        <td>'.$row['product_status'].'</td>
+
+
+  
+        
+        <td><a href="products_details.php?id='.$pro_id.'"> <button type="submit" class="btn btn-dark">Product Details</button></a></td>
+      </tr>
+     </tbody>
+    </table>
